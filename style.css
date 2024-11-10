@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    /* background-image: linear-gradient(to bottom, #f7f7f7, #e8e8e8); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.container{
+    width: 300px;
+}
+.input-container{
+    position: relative;
+}
+.password{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.password:focus{
+    border-color: #666;
+}
+#toggle-password{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+    transition: all 0.3 ease;
+}
+#toggle-password:hover{
+    color: #666;
+}
